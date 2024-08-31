@@ -66,9 +66,9 @@ function registerWinHandler(win) {
 
         let choice = dialog.showMessageBoxSync(win, {
               type: 'question',
-              buttons: ['저장 ( &S )', '저장 안함 ( &N )', '취소 ( &C )'],
+              buttons: ["Save ( &S )", "Don't Save ( &N )", "Cancel ( &C )"],
               title: 'Crusader Kings 3 DNA Manager',
-              message: '내용을 저장하고 종료 하시겠습니까?',
+              message: "Would you like to save the changes and exit?",
               icon : `${__dirname}/icon/ck3_256.png`,
               noLink : false,
               cancelId : 2,

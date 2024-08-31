@@ -11,9 +11,9 @@
 </head>
 <body>
     <header class="top-pannel">
-        <button id="btn-add-dna">DNA 추가</button>
-        <button id="btn-del-dna">DNA 삭제</button>
-        <button id="btn-edit-dna">DNA 편집</button>
+        <button id="btn-add-dna">Add DNA</button>
+        <button id="btn-del-dna">Delete DNA</button>
+        <button id="btn-edit-dna">Edit DNA</button>
     </header>
 
     <section class="main-pannel">
@@ -40,15 +40,15 @@
         </div>
     </section>
 
-    <div id="add-dna-dialog-form" title="DNA 추가">
-        <p>DNA 코드는 복사 후 Ctrl + d 를 눌러 붙여 넣을 수 있습니다.</p>
-        <p>이미지는 클립보드에 복사 후 Ctrl + i 를 눌러 붙여 넣으세요.</p>
+    <div id="add-dna-dialog-form" title="Add DNA">
+        <p>You can copy the DNA code and paste it by pressing Ctrl + D.</p>
+        <p>After copying the image to the clipboard, press Ctrl + I to paste it.</p>
         <form>
             <fieldset id="fldset-add-dialog">
                 <label for="dlg-name">Name</label>
                 <input type="text" name="dlg-input-text" id="dlg-name" class="text ui-widget-content ui-corner-all">
                 <label for="dlg-dna">DNA</label>
-                <input type="text" name="dlg-input-text" id="dlg-dna" class="text ui-widget-content ui-corner-all" placeholder="Base64 또는 Ruler-Designer 포맷의 DNA 코드">
+                <input type="text" name="dlg-input-text" id="dlg-dna" class="text ui-widget-content ui-corner-all" placeholder="DNA code in Base64 or Ruler-Designer format">
                 <lable for="ldg-img">Image</lable>
                 <div id="dlg-img-frame">
                     <img id="dlg-img" />
@@ -57,7 +57,7 @@
         </form>
     </div>
 
-    <div id="edit-dna-dialog-form" title="DNA 편집">
+    <div id="edit-dna-dialog-form" title="DNA Editing">
         <form>
             <fieldset id="fldset-edit-dialog">
                 <div>

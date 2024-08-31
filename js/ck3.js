@@ -111,7 +111,7 @@ function validateGeneArray(geneArray) {
     }
 
     if(result.error) {
-        result.message = "컨버팅 중에 지원하지 않는 항목들이 있습니다.\n" + result.message;
+        result.message = "There are unsupported items during the conversion.\n" + result.message;
     }
 
     return result;

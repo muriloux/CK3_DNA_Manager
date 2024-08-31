@@ -9,7 +9,7 @@
     "pack:win32": "electron-packager . CK3_DNA_Manager --out=build/ --platfrom=win32 --arch=ia32 --icon=icon/ck3.ico",
     "build:win-ia32": "electron-builder --win --ia32",
     "build:win-x64": "electron-builder --win --x64",
-    "deploy" : "electron-builder --windows nsis:x64"
+    "deploy": "electron-builder --windows nsis:x64"
   },
   "repository": "https://github.com/Welshtokki/CK3_DNA_Manager",
   "keywords": [
@@ -19,7 +19,7 @@
   "author": "Welshtokki",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^11.1.1",
+    "electron": "^11.5.0",
     "electron-builder": "^22.9.1",
     "electron-packager": "^15.2.0"
   },
@@ -41,7 +41,7 @@
       "installerIcon": "./icon/ck3.ico",
       "createDesktopShortcut": true
     },
-    "directories" : {
+    "directories": {
       "output": "./build/"
     }
   }

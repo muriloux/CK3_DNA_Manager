@@ -71,7 +71,7 @@ function registerEventHandler() {
             ctx.selected_id = undefined;
         }
         else {
-            alert('삭제할 항목을 선택 해주세요.');
+            alert('Please select an item to delete.');
         }
     });
 
@@ -88,18 +88,18 @@ function registerEventHandler() {
             e.preventDefault();
         }
         else {
-            alert('편집할 항목을 선택 해주세요');
+            alert("Please select an item to edit.");
         }
     });
 
     $("input[type=number]").keyup(function(e){
 
         if( $(this).val() < 0) {
-            alert("값의 범위는 0 ~ 255 입니다");
+            alert("The range of values is 0 to 255.");
             $(this).val(0);
         }
         else if( $(this).val() > 255 ) {
-            alert("값의 범위는 0 ~ 255 입니다");
+            alert("The range of values is 0 to 255.");
             $(this).val(255);
         } else {}
     });
@@ -223,8 +223,8 @@ function makeAddDnaDialog() {
         width : 1000,
         modal : true,
         buttons : {
-            "DNA 추가" : addDnaDialogOk,
-            "취소" : function() {
+            "Add DNA" : addDnaDialogOk,
+            "Cancel" : function() {
                 addDnaDialogClose();
                 ctx.dialog.add.object.dialog("close");
             }
@@ -249,7 +249,7 @@ function makeAddDnaDialog() {
             ctx.dialog.add.object.dialog("close");
         }
         else {
-            alert('비어있는 항목이 있습니다.');
+            alert("There are empty fields.");
         }
 
     }
@@ -280,7 +280,7 @@ function makeAddDnaDialog() {
 
         let result = ck3.validateGeneArray(geneArray);
         if(result.error) {
-            alert(result.message + "\n\n문제가 발생 한 부분은 디폴트 값으로 변경 합니다.");
+            alert(result.message + "\n\nThe part where the issue occurred will be changed to the default value.");
             geneArray = ck3.mitigateInvalidGeneArray(geneArray);
         }
 
